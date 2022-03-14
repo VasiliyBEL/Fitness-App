@@ -1,0 +1,10 @@
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\bin\Debug\Fitness.CMD.exe.config
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\bin\Debug\Fitness.CMD.exe
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\bin\Debug\Fitness.CMD.pdb
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\bin\Debug\Fitness.BL.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\bin\Debug\Fitness.BL.pdb
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\obj\Debug\Fitness.CMD.csproj.AssemblyReference.cache
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\obj\Debug\Fitness.CMD.csproj.CoreCompileInputs.cache
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\obj\Debug\Fitness.CMD.csproj.CopyComplete
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\obj\Debug\Fitness.CMD.exe
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.CMD\obj\Debug\Fitness.CMD.pdb
