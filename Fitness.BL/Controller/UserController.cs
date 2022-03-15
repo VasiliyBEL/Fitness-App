@@ -15,38 +15,75 @@ namespace Fitness.BL.Controller
     public class UserController
     {
         /// <summary>
-        /// User of App.
+        /// Users of App.
         /// </summary>
-        public User User { get; }
+        public List<User> Users { get; }
+
+        /// <summary>
+        /// Current User.
+        /// </summary>
+        public User CurrentUser { get; }
+
+        /// <summary>
+        /// Flag for new User.
+        /// </summary>
+        public bool IsNewUser { get; } = false;
 
         /// <summary>
         /// Create new Controller of User.
         /// </summary>
         /// <param name="user"></param>
-        public UserController(string userName, string genderName, DateTime birthDay, double weight, double height)
+        public UserController(string userName)
         {
-            // TODO: Проверка ЮЗЕРНЕЙМА!
-            var gender = new Gender(genderName);
-            User = new User(userName, gender, birthDay, weight, height);
+            if(string.IsNullOrWhiteSpace(userName))
+            {
+                throw new ArgumentNullException("Имя пользователя не может быть пустым.", nameof(userName));
+            }
+
+            Users = GetUsersData();
+
+            CurrentUser = Users.SingleOrDefault(u => u.Name == userName);
+
+            if (CurrentUser is null)
+            {
+                CurrentUser = new User(userName);
+                Users.Add(CurrentUser);
+                IsNewUser = true;
+                Save();
+            }
         }
 
         /// <summary>
-        /// Load User Data.
+        /// Get saved List of Users.
         /// </summary>
         /// <returns> User. </returns>
-        public UserController()
+        private List<User> GetUsersData()
         {
             var formatter = new BinaryFormatter();
 
             using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                if (formatter.Deserialize(fs) is User user)
+                if (formatter.Deserialize(fs) is List<User> users)
                 {
-                    User = user;
+                   return users;
                 }
-
-                // TODO: Что делать если не прочитали ЮЗЕРА?
+                else
+                {
+                    return new List<User>();
+                }
             }
+        }
+
+        public void SetNewUserData(string genderName, DateTime birthDate, double weight = 1, double height = 1)
+        {
+            // Check
+
+            CurrentUser.Gender = new Gender(genderName);
+            CurrentUser.BirthDate = birthDate;
+            CurrentUser.Weight = weight;
+            CurrentUser.Height = height;
+            Save();
+
         }
 
         /// <summary>
@@ -58,7 +95,7 @@ namespace Fitness.BL.Controller
 
             using(var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, User);
+                formatter.Serialize(fs, Users);
             }
         }
     }
