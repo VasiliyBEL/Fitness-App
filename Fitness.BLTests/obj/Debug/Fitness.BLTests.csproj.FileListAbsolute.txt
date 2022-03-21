@@ -1,9 +1,6 @@
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
-C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
-C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\Fitness.BLTests.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\Fitness.BLTests.pdb
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\bin\Debug\Fitness.BL.dll
