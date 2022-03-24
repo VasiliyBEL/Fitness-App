@@ -13,4 +13,3 @@ C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\obj\Debug\Fitness.BLTest
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\obj\Debug\Fitness.BLTests.csproj.CoreCompileInputs.cache
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\obj\Debug\Fitness.BLTests.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\obj\Debug\Fitness.BLTests.pdb
-C:\Users\vaspn\source\repos\Fitness-App\Fitness.BLTests\obj\Debug\Fitness.BLTests.csproj.CopyComplete
