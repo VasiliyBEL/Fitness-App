@@ -2,7 +2,9 @@
 using Fitness.BL.Model;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,9 +14,12 @@ namespace Fitness.CMD
     {
         static void Main()
         {
-            Console.WriteLine("FITNESS-APP");
+            var culture = CultureInfo.CreateSpecificCulture("ru-ru");
+            var resourceManager = new ResourceManager("Fitness.CMD.Languages.Messages(RU)", typeof(Program).Assembly);
 
-            Console.WriteLine("Введите имя пользователя:");
+            Console.WriteLine(resourceManager.GetString("Welcome", culture));
+
+            Console.WriteLine(resourceManager.GetString("EnterName", culture));
             var name = Console.ReadLine();
 
             var userController = new UserController(name);
@@ -62,7 +67,7 @@ namespace Fitness.CMD
             var calories = ParseDouble("Калорийность");
             var prot = ParseDouble("Белки");
             var fats = ParseDouble("Жиры");
-            var carbs = ParseDouble("Углеводы");
+            var carbs = ParseDouble("Углеводы"); 
 
             var weight = ParseDouble("Вес порции");
             var product = new Food(food, calories, prot, fats, carbs );
