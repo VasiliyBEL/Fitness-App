@@ -1,5 +1,6 @@
 # Fitness-App
 !!! OPEN Fitness.CMD with the roots of administrator. !!!
+
 App for training in gym to calculate your calories and hours of work-out.
 The application implements a console interface for entering user data,
 displaying the amount of food consumed and the energy expended from physical activities.
