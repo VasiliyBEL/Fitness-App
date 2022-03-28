@@ -1,0 +1,11 @@
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\Fitness.BL.dll.config
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\Fitness.BL.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\Fitness.BL.pdb
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\EntityFramework.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\EntityFramework.xml
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Release\Fitness.BL.csproj.CoreCompileInputs.cache
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Release\Fitness.BL.csproj.CopyComplete
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Release\Fitness.BL.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Release\Fitness.BL.pdb
