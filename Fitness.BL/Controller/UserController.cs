@@ -14,7 +14,6 @@ namespace Fitness.BL.Controller
     /// </summary>
     public class UserController : ControllerBase
     {
-        private const string USERS_FILE_NAME = "users.dat";
         /// <summary>
         /// Users of App.
         /// </summary>
@@ -36,7 +35,7 @@ namespace Fitness.BL.Controller
         /// <param name="user"></param>
         public UserController(string userName)
         {
-            if(string.IsNullOrWhiteSpace(userName))
+            if (string.IsNullOrWhiteSpace(userName))
             {
                 throw new ArgumentNullException("Имя пользователя не может быть пустым.", nameof(userName));
             }
@@ -50,7 +49,6 @@ namespace Fitness.BL.Controller
                 CurrentUser = new User(userName);
                 Users.Add(CurrentUser);
                 IsNewUser = true;
-                Save();
             }
         }
 
@@ -60,7 +58,7 @@ namespace Fitness.BL.Controller
         /// <returns> User. </returns>
         private List<User> GetUsersData()
         {
-            return Load<List<User>>(USERS_FILE_NAME) ?? new List<User>();
+            return Load<User>() ?? new List<User>();
         }
 
         public void SetNewUserData(string genderName, DateTime birthDate, double weight = 1, double height = 1)
@@ -80,7 +78,7 @@ namespace Fitness.BL.Controller
         /// </summary>
         public void Save()
         {
-            base.Save(USERS_FILE_NAME, Users);
+            Save(Users);
         }
     }
 }

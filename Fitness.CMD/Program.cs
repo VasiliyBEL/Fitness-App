@@ -107,7 +107,7 @@ namespace Fitness.CMD
             var fats = ParseDouble("Жиры");
             var carbs = ParseDouble("Углеводы"); 
 
-            var weight = ParseDouble("Вес порции");
+            var weight = ParseDouble("вес порции");
             var product = new Food(food, calories, prot, fats, carbs );
 
 

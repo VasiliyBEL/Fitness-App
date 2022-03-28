@@ -10,15 +10,17 @@ namespace Fitness.BL.Model
     public class User
     {
         #region Properties of User.
+        public int Id { get; set; }
         /// <summary>
         /// Name of User.
         /// </summary>
-        public string Name { get; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Gender of User.
         /// </summary>
-        public Gender Gender { get; set; }
+        public int? GenderId { get; set; }
+        public virtual Gender Gender { get; set; }
 
         /// <summary>
         /// Birthday of User. 
@@ -35,6 +37,8 @@ namespace Fitness.BL.Model
         /// </summary>
         public double Height { get; set; }
 
+        public virtual ICollection<Eating> Eatings { get; set; }
+        public virtual ICollection<Exercise> Exercises { get; set; }
         /// <summary>
         /// Age.
         /// DateTime nouDate = DateTime.Today;
@@ -60,16 +64,15 @@ namespace Fitness.BL.Model
                 throw new ArgumentNullException("Имя пользователя не может быть пустым или null.", nameof(name));
             }
 
-            if (gender == null)
-            {
-                throw new ArgumentNullException("Пол не может быть null.", nameof(gender));
-            }
-
             if (birthDate < DateTime.Parse("01.01.1900") || birthDate >= DateTime.Now)
             {
                 throw new ArgumentException("Невозможная дата рождения.", nameof(birthDate));
             }
 
+            if (gender is null)
+            {
+                throw new ArgumentNullException("Пол не может быть null.", nameof(gender));
+            }
 
             if (weight <= 0)
             {
@@ -83,11 +86,13 @@ namespace Fitness.BL.Model
             #endregion
 
             Name = name;
-            Gender = gender;
+            Gender = gender; 
             BirthDate = birthDate;
             Weight = weight;
             Height = height;
         }
+
+        public User() { }
 
         public User(string name) 
         {

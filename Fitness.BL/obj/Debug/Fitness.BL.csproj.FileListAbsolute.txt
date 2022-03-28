@@ -1,6 +1,12 @@
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\Fitness.BL.dll.config
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\Fitness.BL.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\Fitness.BL.pdb
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\EntityFramework.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\EntityFramework.xml
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Debug\Fitness.BL.csproj.AssemblyReference.cache
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Debug\Fitness.BL.csproj.CoreCompileInputs.cache
+C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Debug\Fitness.BL.csproj.CopyComplete
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Debug\Fitness.BL.dll
 C:\Users\vaspn\source\repos\Fitness-App\Fitness.BL\obj\Debug\Fitness.BL.pdb

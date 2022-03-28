@@ -9,10 +9,16 @@ namespace Fitness.BL.Model
     [Serializable]
     public class Gender
     {
+        public int Id { get; set; }
+
         /// <summary>
         /// Name of Gender.
         /// </summary>
-        public string Name { get; }
+        public string Name { get; set; }
+
+        public virtual ICollection<User> Users { get; set; }
+
+        public Gender() { }
 
         /// <summary>
         /// Create new Gender.
